@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_06_045910) do
+ActiveRecord::Schema.define(version: 2020_07_06_085453) do
+
+  create_table "lists", force: :cascade do |t|
+  end
 
   create_table "todos", force: :cascade do |t|
     t.text "task"
