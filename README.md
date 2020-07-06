@@ -3,22 +3,36 @@
 This to-do-list application uses Rails as backend and, simple JavaScript and css for frontend. You can use this app to keep track of the tasks you dont want to forget.
 
 
-Things you may want to cover:
+## Getting started
 
-* Ruby version
+To get started with the app, clone these repos:
+```
+$ git clone https://github.com/hbajwaa/todo_api
+$ git clone https://github.com/hbajwaa/todo_frontend
+```
 
-* System dependencies
+Then cd into todo_api(backend) and install the dependencies:
+```
+$ bundle install
+```
 
-* Configuration
+Next, migrate the database:
+```
+$ rails db:migrate
+```
 
-* Database creation
+Then start the rails server:
+```
+$ rails s
+```
 
-* Database initialization
+Then simply open the `index.html` file from frontend repo
 
-* How to run the test suite
+# Contributing
+This is an open source app, feel free to use it or suggest/add any features.
+Bug reports are welcome on GitHub at https://github.com/hbajwaa/todo_api.
 
-* Services (job queues, cache servers, search engines, etc.)
+## License
 
-* Deployment instructions
-
-* ...
+This application is available as open source under the terms of MIT LICENSE. See
+[LICENSE](LICENSE) for more details.
