@@ -1,7 +1,7 @@
 # To-Do list
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This to-do-list application uses Rails as backend and, simple JavaScript and css for frontend. You can use this app to keep track of the tasks you dont want to forget.
+
 
 Things you may want to cover:
 
