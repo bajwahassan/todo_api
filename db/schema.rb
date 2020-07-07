@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_06_085453) do
+ActiveRecord::Schema.define(version: 2020_07_07_164206) do
 
   create_table "lists", force: :cascade do |t|
   end
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_07_06_085453) do
     t.text "task"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "list_id"
   end
 
 end
