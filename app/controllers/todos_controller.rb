@@ -3,6 +3,7 @@ class TodosController < ApplicationController
 
   # GET /todos
   def index
+
     @todos = Todo.all
 
     render json: @todos
@@ -24,7 +25,7 @@ class TodosController < ApplicationController
     end
   end
 
-  # PATCH/PUT /todos/1
+
   def update
     if @todo.update(todo_params)
       render json: @todo
@@ -33,7 +34,7 @@ class TodosController < ApplicationController
     end
   end
 
-  # DELETE /todos/1
+
   def destroy
     @todo.destroy
   end
@@ -46,6 +47,6 @@ class TodosController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def todo_params
-      params.require(:todo).permit(:task)
+      params.require(:todo).permit(:task, :list_id)
     end
 end
